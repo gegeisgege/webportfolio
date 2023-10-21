@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Portfolio Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Common styles for all pages */
+        body {
+            background-color: #f2f2f2;
+        }
+
+        .navbar {
+            background-color: #333;
+        }
+
+        .navbar a {
+            color: #fff !important;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: lightgray;
+        }
+
+        .btn-primary {
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: lightblue;
+            color: #333;
+        }
+
+        /* Form container styles */
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            margin: 50px auto;
+            max-width: 600px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Success message styles */
+        .success-message {
+            background-color: lightgreen;
+            color: #333;
+            padding: 10px;
+            text-align: center;
+            display: none;
+        }
+
+        .social-media-section {
+    background-color: #333;
+    color: #fff;
+    padding: 110px 0;
+    height: 50px;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    max-width: 40px;
+}
+
+.copyright-notice {
+    font-size: 14px;
+}
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Gerald Mahapranaja Pillian</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="website.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sign Up Form -->
+    <div class="container form-container">
+        <h2 class="text-center">Join Us</h2>
+        <form id="signup-form">
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+        </form>
+        <div class="success-message" id="success-message">
+            Thank You for Joining Us!
+        </div>
+    </div>
+
+    <script>
+        // Get form and success message elements
+        const signupForm = document.getElementById("signup-form");
+        const successMessage = document.getElementById("success-message");
+
+        // Add submit event listener to the form
+        signupForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            // You can add form validation here if needed
+
+            // Show the success message and hide the form
+            signupForm.style.display = "none";
+            successMessage.style.display = "block";
+        });
+    </script>
+
+<br><br>
+
+<section class="social-media-section">
+    <div class="container text-center">
+        <div class="social-icons">
+            <a href="#"><img src="https://freelogopng.com/images/all_img/1658586823instagram-logo-transparent.png" alt="Instagram"></a>
+            <a href="#"><img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Facebook"></a>
+            <a href="#"><img src="https://cdn.icon-icons.com/icons2/2428/PNG/512/shutterstock_black_logo_icon_147084.png" alt="Pinterest"></a>
+        </div>
+        <p class="copyright-notice">&copy; 2023 Gerald Mahapranaja Pillian. All rights reserved.</p>
+    </div>
+</section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

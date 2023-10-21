@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Portfolio Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Common styles for all pages */
+        body {
+            background-color: #f2f2f2;
+        }
+
+        .navbar {
+            background-color: #333;
+        }
+
+        .navbar a {
+            color: #fff !important;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: lightgray;
+        }
+
+        /* Contact section styles */
+        .contact-section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 50px auto;
+            max-width: 800px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #444;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .thank-you-message {
+            color: green;
+            text-align: center;
+            display: none;
+        }
+
+        .social-media-section {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    max-width: 40px;
+}
+
+.copyright-notice {
+    font-size: 14px;
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Gerald Mahapranaja Pillian</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="website.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <div class="container contact-section">
+        <h2 class="text-center">Contact Gerald</h2>
+        <br>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Your Email">
+            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <p>Email: gerald.pranaja@gmail.com</p>
+            <p>Phone: +62 (812) 19136958</p>
+        </div>
+        <div class="thank-you-message" id="thank-you-message">
+            Thank you for the message!
+        </div>
+    </div>
+
+    <br><br>
+    <section class="social-media-section">
+        <div class="container text-center">
+            <div class="social-icons">
+                <a href="#"><img src="https://freelogopng.com/images/all_img/1658586823instagram-logo-transparent.png" alt="Instagram"></a>
+                <a href="#"><img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Facebook"></a>
+                <a href="#"><img src="https://cdn.icon-icons.com/icons2/2428/PNG/512/shutterstock_black_logo_icon_147084.png" alt="Pinterest"></a>
+            </div>
+            <p class="copyright-notice">&copy; 2023 Gerald Mahapranaja Pillian. All rights reserved.</p>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.querySelector('.contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            document.querySelector('#thank-you-message').style.display = 'block';
+        });
+    </script>
+</body>
+
+</html>

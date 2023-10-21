@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS for the jumbotron */
+        .jumbotron {
+            background-image: url('file:///C:/Users/geral/OneDrive/Desktop/website/DSC_0359.jpg');
+            background-size: cover; 
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff; /* Text color */
+            text-align: center;
+            padding: 150px 0;
+            height: 1000px;
+        }
+
+        .jumbotron h1 {
+            font-size: 3em;
+        }
+
+        .jumbotron p {
+            font-size: 1.5em;
+        }
+
+        /* Navigation bar style */
+        .navbar {
+            background-color: #333; /* Navbar background color */
+        }
+
+        .navbar a {
+            color: #fff !important; /* Navbar link color */
+            text-decoration: none;
+            transition: color 0.3s; /* Add a transition effect for color change */
+        }
+
+        .navbar a:hover {
+            color: lightgray; /* Change the color when hovering */
+        }
+
+        /* Button animation */
+        .btn-primary {
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: lightblue;
+            color: #333;
+        }
+
+        .image-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .image-box {
+            width: 30%; /* Adjust the width as needed */
+            margin: 1%;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .image-box img {
+            max-width: 100%;
+        }
+
+        .animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Custom CSS for the social media and copyright section */
+.social-media-section {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    max-width: 40px;
+}
+
+.copyright-notice {
+    font-size: 14px;
+}
+
+      /* Custom CSS for the second background section */
+.jumbotron-secondary {
+    background-image: url('file:///C:/Users/geral/OneDrive/Desktop/website/DSC_0259.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff; /* Text color */
+    text-align: center;
+    padding: 250px 0;
+    height: 600px; /* Adjust the height as needed */
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Gerald Mahapranaja Pillian</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="website.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Jumbotron (Hero Section) -->
+    <div class="jumbotron">
+        <h1>The Essence of Nature's Beauty,</h1>
+        <h1>In Harmony With All Living Beings</h1>
+        <p>Prakrti Sundara Rasa, Sarva Jivane Sah</p>
+        <a class="btn btn-primary btn-lg" href="portfolio.html" role="button">View Portfolio</a>
+    </div>
+<br>
+        <!-- Image section -->
+        <section id="image-section">
+            <div class="container">
+                <h2 class="text-center">Picture Gallery</h2>
+                <div class="image-row">
+                    <!-- First set of three images -->
+                    <div class="image-box">
+                        <img src="C:\Users\geral\OneDrive\Desktop\website\DSC_0454.jpg" alt="Image 1">
+                    </div>
+                    <div class="image-box">
+                        <img src="C:\Users\geral\OneDrive\Desktop\website\DSC_0432.jpg" alt="Image 2">
+                    </div>
+                    <div class="image-box">
+                        <img src="C:\Users\geral\OneDrive\Desktop\website\DSC_0372.jpg" alt="Image 3">
+                    </div>
+    
+                    <!-- Second set of three images -->
+                    <div class="image-box">
+                        <img src="C:\Users\geral\OneDrive\Desktop\website\DSC_0303.jpg" alt="Image 4">
+                    </div>
+                    <div class="image-box">
+                        <img src="C:\Users\geral\OneDrive\Desktop\website\DSC_0297.jpg" alt="Image 5">
+                    </div>
+                    <div class="image-box">
+                        <img src="C:\Users\geral\OneDrive\Desktop\website\DSC_0359.jpg" alt="Image 6">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br><br><br>
+
+        <div class="jumbotron-secondary">
+            <h1 class="text-center">Work Now With GMP</h1>
+            <a class="btn btn-primary btn-lg" href="signup.html" role="button">Sign Up</a>
+        </div>
+
+        <!-- Social Media and Copyright Section -->
+<section class="social-media-section">
+    <div class="container text-center">
+        <div class="social-icons">
+            <a href="#"><img src="https://freelogopng.com/images/all_img/1658586823instagram-logo-transparent.png" alt="Instagram"></a>
+            <a href="#"><img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Facebook"></a>
+            <a href="#"><img src="https://cdn.icon-icons.com/icons2/2428/PNG/512/shutterstock_black_logo_icon_147084.png" alt="Pinterest"></a>
+        </div>
+        <p class="copyright-notice">&copy; 2023 Gerald Mahapranaja Pillian. All rights reserved.</p>
+    </div>
+</section>
+
+
+    <script>
+        // JavaScript to add an appearing animation when scrolling to the image section
+        const imageSection = document.getElementById("image-section");
+        const imageBoxes = document.querySelectorAll(".image-box");
+
+        function checkScroll() {
+            const sectionPosition = imageSection.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight;
+
+            if (sectionPosition < screenPosition) {
+                for (let i = 0; i < imageBoxes.length; i++) {
+                    const box = imageBoxes[i];
+                    box.classList.add("animate");
+                }
+                // Remove the scroll event listener to prevent unnecessary animations
+                window.removeEventListener("scroll", checkScroll);
+            }
+        }
+
+        window.addEventListener("scroll", checkScroll);
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
