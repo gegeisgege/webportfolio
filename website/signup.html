@@ -135,7 +135,31 @@
         // Add submit event listener to the form
         signupForm.addEventListener("submit", function (e) {
             e.preventDefault();
-            // You can add form validation here if needed
+
+                        const emailInput = document.getElementById("email");
+            const phoneInput = document.getElementById("phone");
+
+            if (!isValidEmail(emailInput.value) || !isValidPhone(phoneInput.value)) {
+                e.preventDefault(); // Prevent form submission
+                return;
+            }
+
+            // Show the success message and hide the form
+            signupForm.style.display = "none";
+            successMessage.style.display = "block";
+        });
+
+        // JavaScript-based validation functions
+        function isValidEmail(email) {
+            // Basic email validation using a regular expression
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            return emailPattern.test(email);
+        }
+
+        function isValidPhone(phone) {
+            // Basic phone number validation (custom rules can be added)
+            return phone.match(/^\d{10}$/);
+        }
 
             // Show the success message and hide the form
             signupForm.style.display = "none";
